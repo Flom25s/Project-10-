@@ -1,18 +1,210 @@
 <!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
+<html lang="en">
 	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
 		<!-- Заголовок страницы в браузере -->
-		<title>CSS. Домашка после 9 урока</title>
+		<title>FLEXBOX</title>
 		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="css/style.css" />
+		<!--Отключение форматирования ссылки у номера телефона на IOS-->
+		<meta name="format-detection" content="telephone=no">
+		<!-- Метатеги для соц сетей Это для Фейсбука-->
+		<meta property="og:locate" content="ru_RU"> <!--Сайт Россиянский-->
+		<meta property="og:type" content="article"> <!--Тип контента-->
+		<meta property="og:title" content="Флексерские боксы"> <!--Заголовок страницы-->
+		<meta property="og:description" content="Практикулина по Флексам"> <!--Описание страницы-->
+		<meta property="og:image" content=""> <!--Изображение, которое будет использоваться-->
+		<meta property="og:url" url=""> <!--Используемая ссылка-->
+		<meta property="og:site_name" content="FLEXBOX"> <!--Название сайта-->
 		<!-- Кодировка страницы -->
-		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta charset="UTF-8">
+		<!--  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />  -->
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
-		
+		<div class="wrapper">
+			<div class="content">
+				<div class="hello">
+					<div class="container">
+						<div class="hello_row">
+							<div class="hello_body">
+								<!--<i class="fab fa-accessible-icon"></i> --> <!--Какая-то штуковина, лучше не стоит-->
+								<div class="hello_title"> <p>Здравствуйте,</p> Вы наблюдаете мои попытки учёбы!</div>
+								<ul class="hello_list">
+								<li>Стараюсь не лениться!</li>	
+								<li>Пытаюсь прогрессировать!</li>
+								<li>Постоянно узнаю новое!</li>
+								<li>И результат такой, какой есть!</li>
+								</ul>
+							</div>
+							<div class="hello_image">
+								<img src="img/shilo_ptych.jpg" width="170" height="250" alt="hello_shilo">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="what">
+					<div class="container">
+						<div class="what_row">
+							<div class="what_image">
+								<img src="img/flex_imaginator.png" alt="image_Flex">
+							</div>
+							<div class="what_body">
+								<div class="what_title title">
+									Что такое FlexBox?
+								</div>
+								<div class="what_text">
+									<p>FlexBox- это целый модуль, содержащий в себе набор свойств и их значений как для родителя flex-контейнера так и для его дочерних элементов.</p>
+									<p>Основным преимуществом гибкой FLEX разметки является возможность изменять ширину/высоту пространство вокруг и порядок flex-элементов, для того чтобы наилучшим образом заполнить доступное пространство flex-контейнера.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="columns">
+					<div class="container">
+						<div class="columns_title title">
+							Колонки с flex-контейнерами
+						</div>
+						<div class="columns_row">
+							<div class="columns_column">
+								<div class="columns_item item">
+									<div class="item_row">
+										<div class="item_image">
+											<img src="img/Scary_face.jpg" width="200" height="200" alt="Scary_face">
+										</div>
+										<div class="item_body">
+											<div class="item_title">
+												Ну и рожа вы только гляньте на это №1
+											</div>
+											<div class="item_text">
+												<p>Ну эти японцы и напридумывают чудищ-юдищ такое же и в страшном сне не приснится а тут на те. Понятно откуда они аниме своё рисуют у них там как-будто все уже давно ку-ку. Потом они наших детей будут учить ну уж нет!!!</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns_column">
+								<div class="columns_item item">
+									<div class="item_row">
+										<div class="item_image">
+											<img src="img/Scary_face_0.jpg" width="200" height="200" alt="Scary_face_0">
+										</div>
+										<div class="item_body">
+											<div class="item_title">
+												Ну и рожа вы только гляньте на это №2
+											</div>
+											<div class="item_text">
+												<p>Ну эти японцы и напридумывают чудищ-юдищ такое же и в страшном сне не приснится а тут на те. Понятно откуда они аниме своё рисуют у них там как-будто все уже давно ку-ку. Потом они наших детей будут учить ну уж нет!!!</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns_column">
+								<div class="columns_item item">
+									<div class="item_row">
+										<div class="item_image">
+											<img src="img/Scary_face_1.jpg" width="200" height="200" alt="Scary_face_1">
+										</div>
+										<div class="item_body">
+											<div class="item_title">
+												Ну и рожа вы только гляньте на это №3
+											</div>
+											<div class="item_text">
+												<p>А вот итальянцы не лучше. Сонный паралич и то красивее и привлекательнее чем вот эти рожы. Ну и ну прикрываются ещё тем что уних якобы культура многовековая и так далее. Ну и уродцы, сыкуны, выходите раз на раз!!!</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns_column">
+								<div class="columns_item item">
+									<div class="item_row">
+										<div class="item_image">
+											<img src="img/Scary_face_2.jpg" width="200" height="200" alt="Scary_face_2">
+										</div>
+										<div class="item_body">
+											<div class="item_title">
+												Ну и рожа вы только гляньте на это №4
+											</div>
+											<div class="item_text">
+												<p>А вот итальянцы не лучше. Сонный паралич и то красивее и привлекательнее чем вот эти рожы. Ну и ну прикрываются ещё тем что уних якобы культура многовековая и так далее. Ну и уродцы, сыкуны, выходите раз на раз!!!</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vertical">
+					<div class="container">
+						<div class="vertical_title title">
+							Вертикальное выравнивание
+						</div>
+						<div class="vertical_body">
+							<div class="vertical_row">
+								<div class="vertical_column">
+									<div class="vertical_item">
+										<div class="vertical_subtitle">
+											Человек- коллега
+										</div>
+										<div class="vertical_label">
+											ДОБРОГО
+										</div>
+										<div class="vertical_text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolores quam reiciendis nam repellendus saepe explicabo cumque repellat perferendis nesciunt.
+										</div>
+										<a href="#" class="vertical_btn">Кнопочка №1</a>
+									</div>
+								</div>
+								<div class="vertical_column">
+									<div class="vertical_item">
+										<div class="vertical_subtitle">
+											Человек- без шуток
+										</div>
+										<div class="vertical_label">
+											ВРЕМЕНИ
+										</div>
+										<div class="vertical_text">
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolores quam reiciendis nam repellendus saepe explicabo cumque repellat perferendis nesciunt.</p>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolores quam reiciendis nam repellendus saepe explicabo cumque repellat perferendis nesciunt.</p>
+										</div>
+										<a href="#" class="vertical_btn">Кнопочка №2</a>
+									</div>
+								</div>
+								<div class="vertical_column">
+									<div class="vertical_item">
+										<div class="vertical_subtitle">
+											Он говорит
+										</div>
+										<div class="vertical_label">
+											СУТОК
+										</div>
+										<div class="vertical_text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolores quam reiciendis nam repellendus saepe explicabo cumque repellat perferendis nesciunt.
+										</div>
+										<a href="#" class="vertical_btn">Кнопочка №3</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer_row">
+						<div class="footer_text">
+							<p>Вот и всё ребятки !!!</p>
+							<p>Moscow 2021</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>
